@@ -1,0 +1,121 @@
+@import "../../styles/main.scss";
+
+.portfolio {
+  text-align: center;
+  width: min(1400px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: $spacing2;
+  background: $bg;
+
+  h2 {
+    font-size: 40px;
+  }
+
+  &__filters {
+    margin-bottom: $spacing;
+    display: flex;
+    gap: $spacing05;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__filter_button {
+    background: $bg;
+    border-radius: $radius;
+    border: 1px solid $dark;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: 'PoppinsMedium';
+    color: $dark;
+    text-decoration: none;
+    transition: .2s;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.03);
+      background: $bg2;
+    }
+
+  }
+
+  &__filter_button.active {
+    background: $dark;
+    color: $bg;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: $spacing;
+  }
+
+  &__item {
+    cursor: pointer;
+    overflow: hidden;
+    background: $bg2;
+    border: 1px solid $dark;
+    padding-bottom: $spacing05;
+    width: 320px; 
+    height: 320px; 
+
+    &__image {
+      width: 100%;
+      object-fit: cover;
+      height: 93% !important;
+      height: auto;
+    }
+  }
+
+  &__modal {
+    position: fixed;
+    padding: $spacing;
+    background: $bg;
+    border: 2px solid $dark;
+    max-width: 600px;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0;
+    outline: 0;
+
+    button {
+      background: $bg;
+      border-radius: $radius;
+      border: 1px solid $dark;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-family: 'PoppinsMedium';
+      color: $dark;
+      text-decoration: none;
+      transition: .2s;
+      cursor: pointer;
+  
+      &:hover {
+        transform: scale(1.03);
+        background: $bg2;
+      }
+  
+    }
+
+    &__overlay {
+      background: rgba(0, 0, 0, 0.75);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__image {
+      width: 100%;
+      height: auto;
+      border: 1px solid $dark;
+    }
+  }
+
+}

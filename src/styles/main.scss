@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'PoppinsRegular';
+  src: url('../../public/fonts/Poppins-Regular.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'PoppinsMedium';
+  src: url('../../public/fonts/Poppins-Medium.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'PoppinsSemiBold';
+  src: url('../../public/fonts/Poppins-SemiBold.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'PoppinsBold';
+  src: url('../../public/fonts/Poppins-Bold.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay-Medium';
+  src: url('../../public/fonts/PlayfairDisplay-Medium.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay-Regular';
+  src: url('../../public/fonts/PlayfairDisplay-Regular.ttf') format('opentype');
+}
+
+//Colors
+$mainTexts: #0A0A09;
+$bg: #FCF7E6;
+$bg2: #EDE7D2;
+$dark: #0A0A09;
+$dark2: #303030;
+$dark3: #3E3D3C;
+
+//Spacing
+$spacing05: 15px;
+$spacing: 30px;
+$spacing2: 60px;
+
+//Border
+$radius05: 6px;
+$radius: 12px;
+$radius2: 24px;
+$border: 1px solid #C7C2BC; 
+
+body {
+    margin: 0;
+    padding: 0;
+    background: $bg;
+    font-family: 'PoppinsMedium';
+  }

@@ -1,0 +1,51 @@
+@import "../../styles/main.scss";
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url('http://www.aluminarte.com.ar/assets/images/architecture-1048092.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: $bg;
+    text-align: center;
+    font-family: 'PlayfairDisplay-medium';
+  
+    &__content {
+      background: #0000008e;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+      h1 {
+        font-size: 76px;
+        margin-bottom: 20px;
+      }
+  
+      p {
+        font-size: 18px;
+        width: min(1000px, 100%);
+      }
+    }
+    &__button{
+      background: $bg;
+      border-radius: $radius;
+
+      padding: 16px 24px;
+      font-size: 14px;
+      font-family: 'PoppinsMedium';
+      color: $dark;
+      text-decoration: none;
+      transition: .2s;
+
+      &:hover{
+        transform: scale(1.03);
+        background: $bg2;
+      }
+
+    }
+  }
+  

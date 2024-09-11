@@ -1,0 +1,67 @@
+@import "../../styles/main.scss";
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    transition: .6s;
+
+    &__content {
+        width: min(1400px, 100%);
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $spacing05 0;
+        border-bottom: 1px solid $bg;
+    }
+
+    &__logo {
+        font-size: 22px;
+        font-weight: bold;
+        color: $bg;
+    }
+
+    &__links {
+        display: flex;
+        list-style: none;
+        gap: $spacing05;
+        padding-left: 0;
+
+        li {
+            transition: .2s;
+        
+            a {
+                text-decoration: none;
+                color: $bg;
+                font-weight: 500;
+                transition: color 0.3s ease;
+
+            }
+
+            &:hover{
+                transform: scale(1.1);
+              }
+        }
+    }
+
+    &__scrolled {
+        background: $bg;
+        border-bottom: 1px solid $dark;  
+
+        .navbar__content {
+            border-bottom: 0;  
+        }
+
+        .navbar__logo {
+            color: $dark;
+        }
+
+        .navbar__links li a {
+            color: $dark;
+        }
+    }
+}

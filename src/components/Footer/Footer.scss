@@ -1,0 +1,88 @@
+@import "../../styles/main.scss";
+
+.footer {
+    background: $dark;
+    color: $bg;
+    padding: $spacing;
+    font-size: 14px;
+  
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      width: min(1400px, 100%);
+      margin-left: auto;
+      margin-right: auto;
+  
+      & > div {
+        flex: 1;
+        margin: 10px;
+        min-width: 200px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  
+    &__section {
+      &--info, &--links, &--contact, &--social {
+        h3 {
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+  
+        p {
+          margin-bottom: 10px;
+        }
+      }
+  
+      &--links {
+        ul {
+          list-style-type: none;
+          padding: 0;
+  
+          li {
+            margin: 5px 0;
+  
+            a {
+              color: $bg;
+              text-decoration: none;
+              transition: color 0.3s;
+  
+              &:hover {
+                color: $bg2;
+              }
+            }
+          }
+        }
+      }
+  
+      &--social {
+        .footer__social-icons {
+          display: flex;
+          gap: 10px;
+  
+          a {
+            color: $bg;
+            font-size: 20px;
+            transition: color 0.3s;
+  
+            &:hover {
+              color: $bg2;
+            }
+          }
+        }
+      }
+    }
+  
+    &__bottom {
+      text-align: center;
+      border-top: 1px solid #444;
+      padding-top: 10px;
+      margin-top: 10px;
+    }
+  }
+  
