@@ -10,7 +10,7 @@ const projects = [
   { id: 5, title: 'Proyecto 5', category: 'Mamparas de Baños', imageUrl: 'https://santiagoaberturas.com/img/cms/aluminio-cerramiento.jpg', description: 'Descripción del proyecto 5.' },
   { id: 6, title: 'Proyecto 6', category: 'Puertas', imageUrl: 'https://abermac.com.ar/wp-content/uploads/2021/03/20210308_172349-scaled.jpg', description: 'Descripción del proyecto 6.' },
   { id: 7, title: 'Proyecto 7', category: 'Mamparas de Baños', imageUrl: 'https://santiagoaberturas.com/img/cms/alumino-a30.jpg', description: 'Descripción del proyecto 7.' },
-  { id: 8, title: 'Proyecto 8', category: 'Puertas', imageUrl: 'https://www.novoaberturas.com.ar/global/img/ventanas.jpg', description: 'Descripción del proyecto 8.' },
+  { id: 8, title: 'Proyecto 8', category: 'Puertas', imageUrl: '/img/fondo.jpg', description: 'Descripción del proyecto 8.' },
 ];
 
 const orderedCategories = [
